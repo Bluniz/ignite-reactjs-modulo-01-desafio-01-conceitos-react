@@ -34,6 +34,7 @@ export function TaskList() {
         isComplete: false
       }
       setTasks([...tasks, newTask]);
+      setNewTaskTitle("");
     }
   }
 
