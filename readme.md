@@ -13,7 +13,7 @@
 ## Apresentação do projeto 🌟
 
 <p align="center">
-<image src=".github/image-example.png" />
+<image src=".github/github-image-example.png" />
 </p>
 
 ---
