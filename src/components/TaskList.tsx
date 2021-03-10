@@ -17,7 +17,7 @@ export function TaskList() {
 
   // Solução com Local Storage na branch -> develop
   useEffect(() => {
-    let data = localStorage.getItem('tasks');
+    const data = localStorage.getItem('tasks');
 
     data && setTasks(JSON.parse(data));
   }, [])
