@@ -14,15 +14,17 @@ export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
+
   // Solução com Local Storage na branch -> develop
-  /* useEffect(() => {
+  useEffect(() => {
     let data = localStorage.getItem('tasks');
+
     data && setTasks(JSON.parse(data));
   }, [])
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]) */
+  }, [tasks])
 
   function handleCreateNewTask() {
     const id = Math.random();
@@ -34,6 +36,7 @@ export function TaskList() {
         isComplete: false
       }
       setTasks([...tasks, newTask]);
+      setNewTaskTitle("");
     }
   }
 
